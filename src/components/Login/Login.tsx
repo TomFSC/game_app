@@ -1,12 +1,16 @@
 import React from "react"
 import { loginInputs } from "./loginConfig"
 import InputContainer from "../containers/InputContainer"
-import RegisterContainer from "../containers/RegisterContainer"
+import RegisterForm from "../containers/RegisterForm"
 import { InputContainerProps } from "../../types/types"
 
 function Login(): JSX.Element {
   return (
-    <RegisterContainer backgroundImage="images/ironman.png" title="Login">
+    <RegisterForm
+      btnLabel="SE CONNECTER"
+      backgroundImage="images/ironman.png"
+      title="Login"
+    >
       {loginInputs.map(
         ({
           name,
@@ -24,7 +28,7 @@ function Login(): JSX.Element {
           )
         }
       )}
-    </RegisterContainer>
+    </RegisterForm>
   )
 }
 

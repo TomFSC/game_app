@@ -38,7 +38,7 @@ const theme = {
   },
   dimensions: {
     percent: { small: "12%", medium: "50%", tall: "80%", max: "100%" },
-    pixels: { small: "35px", medium: "80px", large: "300px" },
+    pixels: { small: "35px", medium: "80px", large: "350px" },
   },
   scale: {
     small: 1.5,
@@ -52,7 +52,7 @@ const theme = {
     medium: "5px 5px 10px #C2C1C2",
     softSilver: "0 8px 5px #C2C1C2",
     softPurple: "2px 2px 10px #5430A7",
-    mediumPurple: "5px 5px 20px #5430A7",
+    mediumWhite: "5px 5px 20px #FFFFFF",
   },
   border: {
     softSolid: "2px solid",

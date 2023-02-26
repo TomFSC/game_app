@@ -1,12 +1,16 @@
 import React from "react"
 import { signinInputs } from "./signinConfig"
 import InputContainer from "../containers/InputContainer"
-import RegisterContainer from "../containers/RegisterContainer"
+import RegisterForm from "../containers/RegisterForm"
 import { InputContainerProps } from "../../types/types"
 
 function Signin(): JSX.Element {
   return (
-    <RegisterContainer backgroundImage="images/spiderman.png" title="Signin">
+    <RegisterForm
+      btnLabel="S'ENREGISTER"
+      backgroundImage="images/spiderman.png"
+      title="Signin"
+    >
       {signinInputs.map(
         ({
           name,
@@ -24,7 +28,7 @@ function Signin(): JSX.Element {
           )
         }
       )}
-    </RegisterContainer>
+    </RegisterForm>
   )
 }
 

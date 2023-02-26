@@ -5,7 +5,7 @@ import Login from "../../Login/Login"
 import Signin from "../../Signin/Signin"
 
 function Home(): JSX.Element {
-  const [register, setRegister] = useState<string>("signin")
+  const [register, setRegister] = useState<string>("login")
   return (
     <HomeStyled>
       <h1>

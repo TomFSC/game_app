@@ -23,7 +23,9 @@ const InputContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   height: ${dimensions.pixels.medium};
+  width: ${dimensions.percent.tall};
   align-items: flex-start;
+  margin: 0 auto;
   row-gap: ${spacing.xs};
   label {
     font-size: ${fonts.size.P2};

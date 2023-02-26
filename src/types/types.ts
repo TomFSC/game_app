@@ -1,9 +1,10 @@
 import React from "react"
 
-export type ContainerProps = {
+export type RegisterFormProps = {
   title: string
   backgroundImage: string
   children: React.ReactNode
+  btnLabel: string
 }
 
 export type InputContainerProps = {

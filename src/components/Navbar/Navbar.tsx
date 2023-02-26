@@ -19,35 +19,36 @@ function Navbar(): JSX.Element {
   )
 }
 
+const { colors, fonts, dimensions, spacing, textShadow } = theme
+
 const NavbarStyled = styled.div`
-  height: 80px;
-  width: 100%;
+  height: ${dimensions.pixels.medium};
+  width: ${dimensions.percent.max};
   position: absolute;
   top: 0;
-  background-color: white;
+  background-color: ${colors.white};
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: ${fonts.size.P2};
   .navbar-leftSide {
-    color: ${theme.colors.glaucous};
-    padding-left: 20px;
+    color: ${colors.glaucous};
+    padding-left: ${spacing.m};
     span {
-      font-size: 20px;
       &:hover {
         cursor: pointer;
       }
     }
   }
   .navbar-rightSide {
-    color: ${theme.colors.glaucous};
-    font-size: 20px;
+    color: ${colors.glaucous};
 
     span {
-      padding-right: 20px;
+      padding-right: ${spacing.m};
       &:hover {
         cursor: pointer;
         font-weight: bold;
-        text-shadow: 5px 5px 8px grey;
+        text-shadow: ${textShadow.softGrey};
       }
     }
   }

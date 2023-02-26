@@ -16,9 +16,12 @@ const theme = {
       P0: "11px",
       P1: "18px",
       P2: "20px",
-      P3: "30px",
-      P4: "40px",
-      P5: "50px",
+      P3: "25px",
+      P4: "30px",
+      P5: "40px",
+    },
+    weights: {
+      bold: 700,
     },
   },
   spacing: {
@@ -34,13 +37,16 @@ const theme = {
     xtra: "200px",
   },
   dimensions: {
-    percent: { small: "12%", medium: "50%", tall: "88%", max: "100%" },
-    pixels: { small: "50px", medium: "200px", large: "300px" },
+    percent: { small: "12%", medium: "50%", tall: "80%", max: "100%" },
+    pixels: { small: "35px", medium: "80px", large: "300px" },
   },
   scale: {
     small: 1.5,
     medium: 2,
     big: 3,
+  },
+  textShadow: {
+    softGrey: "5px 5px 8px #DBDADD",
   },
   boxShadow: {
     medium: "5px 5px 10px #C2C1C2",
@@ -48,11 +54,17 @@ const theme = {
     softPurple: "2px 2px 10px #5430A7",
     mediumPurple: "5px 5px 20px #5430A7",
   },
+  border: {
+    softSolid: "2px solid",
+  },
   radius: {
     xtraSoft: "5px",
     soft: "20px",
     rounded: "35px",
     circle: "50%",
+  },
+  opacity: {
+    soft: 0.6,
   },
 }
 

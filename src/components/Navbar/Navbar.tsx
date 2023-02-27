@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import { RegisterProps } from "../../types/types"
 import theme from "../../utils/theme"
 
-function Navbar(): JSX.Element {
+function Navbar({ register, setRegister }: RegisterProps): JSX.Element {
   return (
     <NavbarStyled>
       <div className="navbar-leftSide">
@@ -10,8 +11,8 @@ function Navbar(): JSX.Element {
       </div>
       <div className="navbar-rightSide">
         <div className="infos">
-          <span>Login</span>
-          <span>Signin</span>
+          <span onClick={() => setRegister("login")}>Login</span>
+          <span onClick={() => setRegister("signin")}>Signin</span>
         </div>
         <div className="img-container"></div>
       </div>

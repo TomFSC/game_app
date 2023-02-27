@@ -13,3 +13,8 @@ export type InputContainerProps = {
   inputType: string
   placeholder: string
 }
+
+export type RegisterProps = {
+  register: string
+  setRegister: React.Dispatch<React.SetStateAction<string>>
+}

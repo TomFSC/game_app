@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { RegisterProps } from "../../../types/types"
 import theme from "../../../utils/theme"
 import Login from "../../Login/Login"
 import Signin from "../../Signin/Signin"
 
-function Home(): JSX.Element {
-  const [register, setRegister] = useState<string>("login")
+function Home({ register, setRegister }: RegisterProps): JSX.Element {
   return (
     <HomeStyled>
       <h1>
@@ -13,7 +13,8 @@ function Home(): JSX.Element {
       </h1>
       {register === "" ? (
         <h3>
-          Please <span>Login</span> or <span>Signin</span>
+          Please <span onClick={() => setRegister("login")}>Login</span> or{" "}
+          <span onClick={() => setRegister("signin")}>Signin</span>
         </h3>
       ) : null}
       {register === "login" ? <Login /> : null}

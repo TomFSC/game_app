@@ -38,7 +38,7 @@ const theme = {
   },
   dimensions: {
     percent: { small: "12%", medium: "50%", tall: "80%", max: "100%" },
-    pixels: { small: "35px", medium: "80px", large: "350px" },
+    pixels: { small: "35px", medium: "80px", large: "300px", xl: "500px" },
   },
   scale: {
     small: 1.5,

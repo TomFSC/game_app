@@ -27,6 +27,7 @@ const RegisterFormStyled = styled.form<ImageProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: ${dimensions.pixels.xl};
   width: ${dimensions.percent.tall};
   row-gap: ${spacing.xs};
   margin-top: ${spacing.l};

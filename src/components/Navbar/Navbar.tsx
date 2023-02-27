@@ -2,25 +2,20 @@ import React from "react"
 import styled from "styled-components"
 import { RegisterProps } from "../../types/types"
 import theme from "../../utils/theme"
+import NavbarRightSide from "./NavbarRightSide/NavbarRightSide"
 
-function Navbar({ register, setRegister }: RegisterProps): JSX.Element {
+function Navbar({ setRegister }: Omit<RegisterProps, "register">): JSX.Element {
   return (
     <NavbarStyled>
       <div className="navbar-leftSide">
         <span>GAMES DASHBOARD</span>
       </div>
-      <div className="navbar-rightSide">
-        <div className="infos">
-          <span onClick={() => setRegister("login")}>Login</span>
-          <span onClick={() => setRegister("signin")}>Signin</span>
-        </div>
-        <div className="img-container"></div>
-      </div>
+      <NavbarRightSide setRegister={setRegister} />
     </NavbarStyled>
   )
 }
 
-const { colors, fonts, dimensions, spacing, textShadow } = theme
+const { colors, fonts, dimensions, spacing } = theme
 
 const NavbarStyled = styled.div`
   height: ${dimensions.pixels.medium};
@@ -38,18 +33,6 @@ const NavbarStyled = styled.div`
     span {
       &:hover {
         cursor: pointer;
-      }
-    }
-  }
-  .navbar-rightSide {
-    color: ${colors.glaucous};
-
-    span {
-      padding-right: ${spacing.m};
-      &:hover {
-        cursor: pointer;
-        font-weight: bold;
-        text-shadow: ${textShadow.softGrey};
       }
     }
   }

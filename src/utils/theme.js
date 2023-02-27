@@ -13,7 +13,9 @@ const theme = {
   },
   fonts: {
     size: {
-      P0: "11px",
+      xs: "12px",
+      s: "14px",
+      P0: "16px",
       P1: "18px",
       P2: "20px",
       P3: "25px",
@@ -37,8 +39,14 @@ const theme = {
     xtra: "200px",
   },
   dimensions: {
-    percent: { small: "12%", medium: "50%", tall: "80%", max: "100%" },
-    pixels: { small: "35px", medium: "80px", large: "300px", xl: "500px" },
+    percent: { small: "25%", medium: "50%", tall: "80%", max: "100%" },
+    pixels: {
+      small: "35px",
+      l: "50px",
+      medium: "80px",
+      large: "300px",
+      xl: "500px",
+    },
   },
   scale: {
     small: 1.5,

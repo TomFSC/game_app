@@ -11,7 +11,7 @@ function App() {
   return (
     <AppStyled>
       <BrowserRouter>
-        <Navbar register={register} setRegister={setRegister} />
+        <Navbar setRegister={setRegister} />
         <Routes>
           <Route
             path="/"
